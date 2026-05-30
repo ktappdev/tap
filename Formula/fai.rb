@@ -11,7 +11,7 @@ class Fai < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ktappdev/fromai.dev-coding-gym-/releases/download/v1.0.0/fromai.dev-coding-gym_1.0.0_darwin_amd64.tar.gz"
-      sha256 "d265b27a213cf2184bc3ec00a920f2ebba7864c4e449d6a964e26847d5fd214b"
+      sha256 "d4d94cb87a88411d061fc7fb31a59332559dcb417c15eb5809a41da7d703cad2"
 
       define_method(:install) do
         bin.install "fai"
@@ -19,7 +19,7 @@ class Fai < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ktappdev/fromai.dev-coding-gym-/releases/download/v1.0.0/fromai.dev-coding-gym_1.0.0_darwin_arm64.tar.gz"
-      sha256 "cb414c13e966fde4463be7a161d1ba978fbe21094a1c21f44ab4bc0a496ac52e"
+      sha256 "d1d392ff48f485a2d4f0e278a87ca8c09e6d1671bd3a417500a90581b745cd63"
 
       define_method(:install) do
         bin.install "fai"
@@ -30,14 +30,14 @@ class Fai < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ktappdev/fromai.dev-coding-gym-/releases/download/v1.0.0/fromai.dev-coding-gym_1.0.0_linux_amd64.tar.gz"
-      sha256 "fd932b510bf9a0a345b5e505241da4ea01f5889153fc9558c7b231787c83fafe"
+      sha256 "295f48f736e7aaa444fa80e7419da455817469176411deb5598564373a8c9329"
       define_method(:install) do
         bin.install "fai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ktappdev/fromai.dev-coding-gym-/releases/download/v1.0.0/fromai.dev-coding-gym_1.0.0_linux_arm64.tar.gz"
-      sha256 "7a03d42aadb9e2cca5c0f7f0a27dd81dc9388003809b9fd5ffa5b27249e1b857"
+      sha256 "8fe5554f59fc7dc1df7e31d4165cb29e3c0480e3d368d1661e5ffa98e44c9fca"
       define_method(:install) do
         bin.install "fai"
       end
