@@ -5,21 +5,21 @@
 class Fai < Formula
   desc "CLI for the fromai coding task manager"
   homepage "https://github.com/ktappdev/fromai"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ktappdev/fromai/releases/download/v1.0.0/fromai_1.0.0_darwin_amd64.tar.gz"
-      sha256 "9623896c1989a89e798e6f824e32627f6f41122d331f8e25d943faf94e9ea7e2"
+      url "https://github.com/ktappdev/fromai/releases/download/v1.0.1/fromai_1.0.1_darwin_amd64.tar.gz"
+      sha256 "7272af10ea01422561b49a64609b05dcb877af13db4fdedec8d47288de7ea793"
 
       define_method(:install) do
         bin.install "fai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ktappdev/fromai/releases/download/v1.0.0/fromai_1.0.0_darwin_arm64.tar.gz"
-      sha256 "4ef2b9356283f7c658452fc6728a40024cc48a682428059ca30451385a8d60d6"
+      url "https://github.com/ktappdev/fromai/releases/download/v1.0.1/fromai_1.0.1_darwin_arm64.tar.gz"
+      sha256 "ba5d96b3e41814ff2e8adedd4f762f512593a95bb8ff6a54765221c5e9e01210"
 
       define_method(:install) do
         bin.install "fai"
@@ -29,15 +29,15 @@ class Fai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ktappdev/fromai/releases/download/v1.0.0/fromai_1.0.0_linux_amd64.tar.gz"
-      sha256 "f3fde5e91395ac29c5e4f719e7ac86f36a9fb4786086232fd73d1229091345e6"
+      url "https://github.com/ktappdev/fromai/releases/download/v1.0.1/fromai_1.0.1_linux_amd64.tar.gz"
+      sha256 "f5a4e36d569e7a7568fd51a9d4fdab9f09d3d01f38eb8694c7655581e6de2468"
       define_method(:install) do
         bin.install "fai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ktappdev/fromai/releases/download/v1.0.0/fromai_1.0.0_linux_arm64.tar.gz"
-      sha256 "cf7b929fcfa8a3e0e0b77bd69e1625b1dfb4df71c11951af1249a7ffec47a234"
+      url "https://github.com/ktappdev/fromai/releases/download/v1.0.1/fromai_1.0.1_linux_arm64.tar.gz"
+      sha256 "895c8b4aea652899c2f69b745a990ef1ea779cdd1921e5ce56c94a797e3ced6c"
       define_method(:install) do
         bin.install "fai"
       end
