@@ -13,5 +13,5 @@ cask "ssh-thing" do
     sha256 "3bac78279b48f789da5eb1b5331a8f8957f9cf9aa800675ff117914b52b05016"
   end
 
-  app "SSH Thing.app"
+  app "SSH THING.app"
 end
